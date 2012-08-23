@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>SAVE - SpriteSheet Animation Viewer and Editor</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="camera.js"></script>
+		<script type="text/javascript" src="viewer.js"></script>
+	</head>
+	<body>
+		<h1>SpriteSheet Animation Viewer and Editor</h1>
+		
+		<div id="controls">
+			<div>
+				<label for="frameCount">FrameCount: </label> 
+				<input id="frameCount" value="1"/>
+			</div>
+			
+			<div>
+				<label for="frameSpeed">FrameSpeed: </label> 
+				<input id="frameSpeed" value="100"/>
+			</div>
+			
+			<div>
+				<div id="flipBtn" class="button" onclick="flip=!flip;"><img src="images/flip.png"/></div>
+				<div id="reverseBtn" class="button" onclick="reverse=!reverse;"><img src="images/reverse.png"/></div>
+			</div>
+			
+			<div>
+				<div id="prevFrameBtn" class="button" onclick="prevFrame()"><img src="images/prev.png"/></div>
+				<div id="goStopBtn" class="button" onclick="stopGo()"><img id="goStopBtnImg" src="images/pause.png"/></div>
+				<div id="nextFrameBtn" class="button" onclick="nextFrame()"><img src="images/next.png"/></div>
+			</div>
+			
+			<div>
+				<!--<div id="saveBtn" class="button" onclick="saveData()">save</div>-->
+			</div>
+		</div>
+		
+		<canvas id="viewerCanvas">
+           <p>This browser you are using is too old to run this app, please upgrade.</p>
+        </canvas>
+	</body>
+</html>

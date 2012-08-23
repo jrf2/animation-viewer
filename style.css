@@ -1,0 +1,36 @@
+body {
+	color: white;
+	background: black;
+	font-family: Comic Sans, Comic Sans MS, cursive;
+}
+
+div.button {
+	width: 26px;
+	background: gray;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div#controls {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	display: box;
+	box-orient: horizontal;
+}
+
+div#controls div {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	display: box;
+	box-orient: horizontal;
+	margin-left: 5px;
+}
+
+input#frameCount, input#frameSpeed {
+	width: 50px;
+}
